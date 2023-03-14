@@ -16,7 +16,6 @@ body {
   width: 370px;
   background-color: #283e50;
   color: #fff;
-
   line-height: 1.4rem;
 }
 
@@ -47,7 +46,6 @@ body {
 .button a {
   display: block;
   padding: 1rem;
-
   text-align: center;
   text-decoration: none;
   color: #fff;
