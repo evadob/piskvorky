@@ -45,8 +45,9 @@ body {
 }
 
 .button a {
-  padding: 1rem;
   display: block;
+  padding: 1rem;
+
   text-align: center;
   text-decoration: none;
   color: #fff;
@@ -58,7 +59,7 @@ body {
   background-color: #1fcca4;
 }
 .button--rules a:hover,
-.button--rules a:hover {
+.button--rules a:active {
   background-color: #1cbb96;
 }
 
@@ -66,7 +67,7 @@ body {
 .button--play a:visited {
   background-color: #0197f6;
 }
-.button--plays a:hover,
-.button--play a:hover {
+.button--play a:hover,
+.button--play a:active {
   background-color: #0090e9;
 }
