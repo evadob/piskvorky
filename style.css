@@ -11,16 +11,19 @@ body {
   background-attachment: fixed;
 }
 
+/* index.html styles */
 .card {
   margin: 3rem auto;
   width: 370px;
   background-color: #283e50;
   color: #fff;
   line-height: 1.4rem;
+  border-radius: 5px 5px 0 0;
 }
 
 .picture img {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 .text {
@@ -31,6 +34,8 @@ body {
 .heading {
   font-family: "Lobster", cursive;
   font-size: 3rem;
+  color: #fff;
+  text-align: center;
 }
 
 .text p {
@@ -52,20 +57,79 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.button--rules a:link,
-.button--rules a:visited {
+.button--green a:link,
+.button--green a:visited {
   background-color: #1fcca4;
 }
-.button--rules a:hover,
-.button--rules a:active {
+.button--green a:hover,
+.button--green a:active {
   background-color: #1cbb96;
 }
 
-.button--play a:link,
-.button--play a:visited {
+.button--blue a:link,
+.button--blue a:visited {
   background-color: #0197f6;
 }
-.button--play a:hover,
-.button--play a:active {
+.button--blue a:hover,
+.button--blue a:active {
   background-color: #0090e9;
+}
+
+/* hra.html styles */
+
+.game {
+  margin: 1rem auto;
+  max-width: 80vmin;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.heading--player {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+}
+
+.circle:before {
+  content: " \25EF";
+  font-size: 20px;
+  margin-left: 0.5rem;
+}
+
+.icons {
+  display: inline-block;
+  display: flex;
+  border-radius: 5px;
+  gap: 0.5rem;
+}
+
+.icons svg {
+  max-width: 90%;
+}
+
+.button-icon a {
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.game__grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  aspect-ratio: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button.square {
+  background-color: rgba(255, 231, 239, 0.485);
+  border: 1px solid #000;
+}
+
+button.square:hover,
+button.square:focus {
+  cursor: pointer;
+  background-color: rgba(255, 231, 239, 0.716);
 }
