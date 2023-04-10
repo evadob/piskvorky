@@ -94,12 +94,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.circle:before {
-  content: " \25EF";
-  font-size: 20px;
-  margin-left: 0.5rem;
-}
-
 .icons {
   display: inline-block;
   display: flex;
@@ -132,4 +126,18 @@ button.square:hover,
 button.square:focus {
   cursor: pointer;
   background-color: rgba(255, 231, 239, 0.716);
+}
+
+/* classes for JS */
+
+.board__field--circle {
+  background-image: url(images/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.board__field--cross {
+  background-image: url(images/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
