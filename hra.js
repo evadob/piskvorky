@@ -12,8 +12,16 @@ const square9 = document.querySelector("button:nth-child(9)");
 const square10 = document.querySelector("button:nth-child(10)");
 
 const playedSquare = (event) => {
-  const playedSquare = event.target.classList.add("board__field--circle");
   event.target.disabled = true;
+  if (currentPlayer === "circle") {
+    let btnElm = document.querySelector(".square");
+    event.target.classList.add("board__field--circle");
+    currentPlayer = "cross";
+  } else {
+    let btnElm = document.querySelector(".square");
+    event.target.classList.add("board__field--cross");
+    currentPlayer = "circle";
+  }
 };
 
 square1.addEventListener("click", playedSquare);
