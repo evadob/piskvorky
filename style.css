@@ -130,6 +130,18 @@ button.square:focus {
 
 /* classes for JS */
 
+.player--circle:before {
+  content: "○";
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+}
+
+.player--cross:before {
+  content: "×";
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+}
+
 .board__field--circle {
   background-image: url(images/circle.svg);
   background-repeat: no-repeat;
