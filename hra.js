@@ -41,10 +41,11 @@ const playedSquare = (event) => {
   // available buttons
   const availableBtns = () => {
     allBtns.forEach((button) => {
-      if (!button.classList.contains("board__field--circle")) {
-        if (!button.classList.contains("board__field--cross")) {
-          button.disabled = false;
-        }
+      if (
+        !button.classList.contains("board__field--circle") &&
+        !button.classList.contains("board__field--cross")
+      ) {
+        button.disabled = false;
       }
     });
   };
